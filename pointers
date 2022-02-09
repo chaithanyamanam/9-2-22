@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+    int a[50];
+    int *p=a;
+    int i,n;
+    int x;
+    int sum=0;
+    printf("enter array size");
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    scanf("%d",&a[i]);
+    for(i=0;i<n;i++)
+    {
+        x=*(p+i);
+        sum=sum+x;
+    }
+ printf("%d",sum);
+     return 0;
+}
+    
